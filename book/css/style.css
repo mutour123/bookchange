@@ -1,0 +1,431 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-10-12 21:54:05
+ * @version $Id$
+ */
+html,body{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin:0;
+}
+.contain{
+	width: 100%;
+	height: 100%;
+	min-width: 1205px;
+	background-image: url(../img/12.jpg);
+	background-size: cover;
+}
+.contain .header ul{
+	padding: 0;
+	margin:0;
+	background-color: rgba(88,88,88,0.6);
+	min-width: 100px;
+}
+
+.contain .header ul li{
+	list-style: none;
+	display: inline-block;
+	/*width: 50px;*/
+	min-width: 50px;
+	/*border:1px solid;*/
+	height: 40px;
+	line-height: 40px;	
+	text-align: center;
+	font-size: 14px;
+}
+.contain .header ul li:hover{
+	background-color: #444;
+}
+.contain .left{
+	position: relative;
+	display: inline-block;
+	top: 100px;
+	left: 10%;
+	/*border: 1px solid red;*/
+}
+.contain .change-text{
+	display: inline-block;
+	width: 300px;
+	height: 30px;
+	font-size: 26px;
+	margin-bottom: 20px;
+	font-weight: bolder;
+}
+.contain .books-con{
+	position: relative;
+	width: 300px;
+	border: 1px solid;
+	height: 640px;
+	/*overflow:auto;*/
+}
+.contain .left .books-con .new-books{
+	width: 100%;
+	height: 36px;
+	background-color: #444;
+	line-height: 36px;
+	text-align: left;
+	font-size: 22px;
+}
+.contain .left .books-con .books{
+	display: block;
+	line-height: 28px;
+	list-style: none;
+	padding: 0px;
+	margin:0px;
+	overflow:auto;
+	height: 600px;
+	font-size: 18px;
+	/*font-weight: bolder;*/
+}
+
+.contain .left .books-con .books span{
+	display: inline-block;
+	line-height: 28px;
+	text-align: center;
+}
+.contain .left .books-con .books .span1{
+	float: left;
+	width: 30px;
+}
+.contain .left .books-con .books .span2{
+	display: inline-block;
+	height: 30px;
+	/*width: 200px;*/
+	/*border: 1px solid red;*/
+
+}
+.contain .left .books-con .book{
+	display: block;
+	/*position: relative;*/
+	padding-left: 30px;
+	box-sizing: border-box;
+	background-color: rgba(88,88,88,0.6);
+	cursor: pointer;
+	border: 1px solid #444;
+}
+.contain .left .books-con .book:hover{
+	background-color: #888;
+}
+.contain .left .books-con .books .book .book-info{
+	width: 400px;
+	height: 640px;
+	position: absolute;
+	display: none;
+	top: 0px;
+	left: 320px;
+	border:1px solid;
+}
+
+.contain .left .books-con .books .book .book-info:hover{
+	background-color: rgba(99,99,99,0.6);
+
+}
+
+
+.contain .left .books-con .book-info .info-name{
+	width: 370px;
+	height: 36px;
+	background-color: #444;
+	line-height: 36px;
+	text-align: center;
+	font-size: 22px;
+	display: inline-block;
+}
+.contain .left .books-con .book-info .close{
+	display: inline-block;
+	width: 30px;
+	line-height: 36px;
+	text-align: center;
+	background-color: #444;
+	cursor: pointer;
+
+	vertical-align: top;
+}
+.contain .left .books-con .book-info .close:hover{
+	background-color: #888;
+	
+}
+.contain .left .books-con .book-info .info-info{
+	padding: 15px;
+	font-size: 16px;
+	line-height: 22px;
+	overflow: auto;
+	height: 313px;
+	/*border: 1px solid;*/
+}
+
+.contain .left .books-con .book-info .info-text{
+	font-weight: bolder;
+	padding: 5px;
+}
+.contain .left .books-con .book-info .contact-text{
+	display: inline-block;
+	/*margin-top: 20px;*/
+	margin-left: 8px;
+	height: 30px;
+	line-height: 30px;
+	font-weight: bolder;
+}
+.contain .left .books-con .book-info .contact-num{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	font-weight: bolder;
+	vertical-align: bottom;
+}
+
+/*右边*/
+.contain .right{
+	width: 360px;
+	/*border: 1px solid;*/
+	height: 402px;
+	position: absolute;
+	right: 0;
+	top: 190px;
+	overflow: hidden;
+ }
+.contain .right .helps{
+	height: 80px;
+	width: 380px;
+	background-color: rgba(88,88,88,0.6);
+	overflow: auto;
+}
+.contain .right .helps div{
+	/*background-color: red;*/
+	height: 60px;
+	padding-right: 50px;
+	padding-top: 20px;
+	box-sizing: border-box;	
+}
+.contain .right .text{
+	position: fixed;
+	right: 0px;
+	z-index: 2;
+}
+.contain .right .text .right-text{
+	width: 40px;
+	height: 98px;
+	line-height: 30px;
+	font-size: 24px;
+	text-align: center;
+	background-color: rgba(88,88,88,0.6);
+	cursor: pointer;
+	padding:5px 0; 
+	border-bottom: 1px solid;
+}
+.contain .right .text .help-text{
+	padding: 0;
+	height: 80px;
+	line-height: 40px;
+}
+.contain .right .text .active-text{
+	height: 80px;
+	line-height: 40px;
+	padding:10px 0;
+}
+.contain .right .text .right-text:hover{
+	background-color: rgba(88,88,88,1);
+}
+/*面板*/
+.contain .right .panels{
+	position: relative;
+	/*left: 12px;*/
+	width: 320px;
+	height: 320px;
+	/*padding: 10px;*/
+	box-sizing: border-box;
+	/*background-color: red;*/
+	/*margin-left: 360px;*/
+}
+.contain .right .panels .panel{
+	width: 320px;
+	height: 320px;
+	position: relative;
+	/*left: 21px;*/
+	/*top: 12px;*/
+	/*border: 1px solid red;*/
+	/*background-color: red;*/
+
+}
+.contain .right .panels .help .help-eare{
+	width: 80%;
+	height: 100px;
+	float: right;
+	display: block;
+	margin-right: 10px;
+	/*border: 1px solid red;*/
+}
+.contain .right .panels .help .panel-help-text{
+	font-size: 20px;
+}
+.contain .right .panels .help .help-sub{
+	float: right;	
+	margin-right: 10px;
+	width: 50px;
+	height: 30px;
+	float: right;
+	margin-left: 100px;
+	margin-top: 20px;
+	font-size: 20px;
+}
+/*活动*/
+.contain .active{
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+.contain .active .active-con{
+	font-size: 18px;
+	margin-top:20px;
+	margin-left: 20px;
+	min-height: 200px;
+	font-weight: normal;
+}
+/*发布书*/
+.contain  .right .publish{
+	padding: 10px;
+}
+.contain .right .panels .publish  .publish-name-text,.author-text,.publish-info-text.contact-text{
+	display: inline-block;
+	width: 80px;
+	line-height: 30px;
+	vertical-align: middle;
+}
+.contain .right .panels .publish .publish-name,.publish-info,.author,.publish-contact{
+	display: inline-block;
+	width: 220px;
+	height: 30px;
+	line-height: 18px;
+	font-size: 12px;
+	margin-bottom:1px; 
+}
+.contain .right .panels .publish .publish-info{
+	display: inline-block;
+	vertical-align: middle;
+	height: 150px;
+	
+}
+.contain .right .panels .publish .publish-sub{
+	width: 80px;
+	height: 30px;
+	float: right;
+	/*margin-top:20px;*/
+	margin-right: 12px; 
+	cursor: pointer;
+}
+/*已发布*/
+.contain .right .panels .published .published-text{
+	margin: 10px;
+	font-size: 16px;
+}
+.contain .right .panels .published .published-book-name{
+	display: inline-block;
+	margin-left: 0px;
+	padding-left: 10px;
+	width: 160px;
+	font-size: 10px;
+	line-height: 30px;
+	height: 30px;
+	border-bottom: 1px solid;
+	margin-bottom: 10px;
+	
+
+}
+.contain .right .panels .published .select{
+	border-bottom: 1px solid;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 30px;
+	text-align: center;
+	height: 30px;
+	width: 55px;
+	position: relative;
+}
+.value{
+	position: absolute;
+	top: 0;
+	left: 0;
+	line-height: 30px;
+	text-align: center;
+	height: 30px;
+	width: 55px;
+	cursor: pointer;
+
+}
+.options{
+	position: absolute;
+	top: 31px;
+	left: 0;
+
+}
+.option{
+	display: inline-block;
+	border-bottom: 1px solid;
+		line-height: 30px;
+	text-align: center;
+	height: 30px;
+	width: 55px;
+	display: none;
+}
+.contain .right .panels .published .delete{
+	border-bottom: 1px solid;
+	display: inline-block;
+	width: 55px;
+	text-align: center;
+	text-decoration: none;
+	color: 0;
+	font-size: 10px;
+	height: 30px;
+	line-height: 30px;
+}
+.contain .right .panels .published ul {
+	padding: 0;
+	padding-left: 10px;
+	width: 320px;
+	box-sizing: border-box;
+	margin:0; 
+	height: 290px;
+	/*border: 1px solid;*/
+	overflow: auto;
+	/*border: 1px solid red;*/
+}
+.contain .right .panels .published ul li{
+	list-style:none;
+}
+.contain .right .panels .help,.active{
+	position: absolute;
+	top: 0;
+	left: 360px;
+	box-sizing: border-box;
+	border: 1px;
+	border: 1px solid;
+
+}
+a{
+	color: 0;
+}
+.contain .right .panels .publish{
+	position: absolute;
+	top: 0;
+	left: 360px;
+	height: 299px;
+	/*width: 300px;*/
+	border: 1px solid;
+	border-right: 0;
+}
+.contain .right .panels .published{
+	position: absolute;
+	top: 0px;
+	left: 360px;
+	border: 1px solid;
+	/*background-color: red;*/
+	/*border: 1px solid red;*/
+}
+
+
+
